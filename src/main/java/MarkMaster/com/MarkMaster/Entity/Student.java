@@ -2,13 +2,15 @@ package MarkMaster.com.MarkMaster.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "student")
 public class Student {
    
-    @column(name = "id")
+    @GeneratedValue
+    @Column(name = "id")
     private int id;
 
     public int getId() {
@@ -28,11 +30,11 @@ public class Student {
     }
 
     public int getClasst() {
-        return classt;
+        return sclass;
     }
 
     public void setClasst(int classt) {
-        this.classt = classt;
+        this.sclass = classt;
     }
 
     public String getPhone() {
